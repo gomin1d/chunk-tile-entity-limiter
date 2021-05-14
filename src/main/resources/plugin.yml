@@ -1,0 +1,10 @@
+name: TileEntityRadiusLimiter
+version: ${project.version}
+main: ua.lokha.tileentityradiuslimiter.Main
+
+# Кодил это? Впиши себя сам
+authors: [lokha]
+
+commands:
+  tileentityradiuslimiter:
+    permission: tileentityradiuslimiter.command

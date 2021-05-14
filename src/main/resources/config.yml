@@ -1,0 +1,45 @@
+# /tileentityradiuslimiter reload - перезагрузить этот конфиг, право tileentityradiuslimiter.command
+
+# период запуска таймера проверки чанков на количество tile entity
+period-ticks: 200
+
+# писать в лог предупреждение, если проверка чанков заняла больше указанного времени
+check-warn-time-millis: 5
+
+# лимиты для отдельных типов tile entity
+limits:
+  # тип tile entity
+  # список имен типов блоков, вот полный список:
+  #   minecraft:furnace
+  #   minecraft:chest
+  #   minecraft:ender_chest
+  #   minecraft:jukebox
+  #   minecraft:dispenser
+  #   minecraft:dropper
+  #   minecraft:sign
+  #   minecraft:mob_spawner
+  #   minecraft:noteblock
+  #   minecraft:piston
+  #   minecraft:brewing_stand
+  #   minecraft:enchanting_table
+  #   minecraft:end_portal
+  #   minecraft:beacon
+  #   minecraft:skull
+  #   minecraft:daylight_detector
+  #   minecraft:hopper
+  #   minecraft:comparator
+  #   minecraft:flower_pot
+  #   minecraft:banner
+  #   minecraft:structure_block
+  #   minecraft:end_gateway
+  #   minecraft:command_block
+  #   minecraft:shulker_box
+  #   minecraft:bed
+  'minecraft:enchanting_table':
+    # максимальное количество tile entity, которое может быть в чанке
+    limit: 32
+
+# общий лимит для всех tile entity
+common-limit:
+  # максимальное количество tile entity, которое может быть в чанке
+  limit: 256
